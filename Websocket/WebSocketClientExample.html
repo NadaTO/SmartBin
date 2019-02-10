@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+	<meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+	<meta charset="utf-8">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<title>My Client Application</title>
+	<link href="WebsocketClientExample.css" rel="stylesheet">
+  </head>
+  <body>
+	<div id="wrapper">
+	  <h1>LoRa Uplink Data/log Traffic</h1>
+	  <table id="keywords" cellspacing="0" cellpadding="0">
+		<thead>
+			<tr>
+				<th><span>Gateway Date</span></th>
+				<th><span>AppEUI</span></th>
+				<th><span>DevEUI</span></th>
+				<th><span>DevAddr</span></th>
+				<th><span>FCntUp</span></th>
+				<th><span>FPort</span></th>
+				<th><span>Decrypted/size Payload</span></th>
+			</tr>
+		</thead>
+		<tbody id="body">
+		</tbody>
+	  </table>
+	</div>
+	<script src="jquery.min.js"></script>
+	<script type="text/javascript" src="WebsocketClientExample.js"></script>
+	<script type="text/javascript">
+		window.onload = function() {
+		callWebSocket();
+
+	};
+	</script>
+	</body>
+</html>
